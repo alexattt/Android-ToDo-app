@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/taskLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="May 23, 2021"
+                android:gravity="center"
+                android:background="@drawable/headerblur"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/taskTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Task"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:maxLines="2"
+                android:textColor="#000">
+            </TextView>
+
+            <TextView
+                android:id="@+id/descriptionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Description"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:maxLines="5"
+                android:textColor="#000">
+            </TextView>
+
+
+            <ImageButton
+                android:id="@+id/btnFinished"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="300dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_done_24"
+                android:textAllCaps="true"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:backgroundTint="#7098DA">
+
+            </ImageButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
